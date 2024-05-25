@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let inputString=prompt('mời nhập')
+    let outputString='';
+    for (let k = 0; k < inputString.length; k++) {
+        let text=inputString[k];
+        if (text>='a' && text<='z') {
+            outputString += text.toUpperCase();
+        } else if(text>='A' && text<='Z'){
+            outputString += text.toLowerCase();
+        }else{
+               outputString += text;
+        }
+    }
+    console.log( 'kêt quả' + outputString);
+
+    </script>
+</body>
+</html>
